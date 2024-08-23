@@ -1,16 +1,14 @@
-export default function Header(){
-    return(
-        <header>
-            <Link to="./home">
-              <Link>Home</Link>
-            </Link>
-            <link to="./Produto">
-              <Link>Produto</Link>
-            </link>
-            <Link to="./ofertas">
-              <Link>ofertas</Link>  
-            </Link>
-        </header>
+import React from "react";
+import { Link } from "react-router-dom";
 
-    );
+export default function Header() {
+  return (
+    <header>
+      <nav>
+        <Link to="/home">Home</Link>
+        <Link to="/Produto">Produto</Link>
+        <Link to="/Ofertas">Ofertas</Link>
+      </nav>
+    </header>
+  );
 }
